@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/31 11:04:06 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/06/03 20:56:12 by viceda-s         ###   ########.fr       */
+/*   Created: 2025/06/03 16:31:38 by viceda-s          #+#    #+#             */
+/*   Updated: 2025/06/03 16:32:13 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+int	ft_atoi(const char *str)
 {
-	char	c;
+	int	result;
+	int	sign;
 
-	c = 'a';
-	while (c <= 'z')
+	result = 0;
+	sign = 1;
+	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		ft_putchar(c);
-		c++;
+		if (*str == '-')
+			sign = -1;
+		str++;
 	}
+	while (*str >= '0' && *str <= '9')
+	{
+		result = result * 10 + (*str - '0');
+		str++;
+	}
+	return (result * sign);
 }

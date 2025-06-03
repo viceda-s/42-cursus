@@ -6,11 +6,13 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 11:22:51 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/05/31 11:23:30 by viceda-s         ###   ########.fr       */
+/*   Updated: 2025/06/03 21:00:26 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -19,7 +21,7 @@ void	ft_putstr(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		write(1, &str[i], 1);
+		ft_putchar(str[i]);
 		i++;
 	}
 }

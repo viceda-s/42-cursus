@@ -6,7 +6,7 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 11:39:53 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/05/31 11:42:24 by viceda-s         ###   ########.fr       */
+/*   Updated: 2025/06/03 21:03:33 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ char	*ft_strdup(char *src)
 
 	if (!src)
 		return (0);
+	i = 0;
 	while (src[i])
 		i++;
 	dest = (char *)malloc(sizeof(char) * (i + 1));

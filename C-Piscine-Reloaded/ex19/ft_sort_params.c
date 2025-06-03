@@ -6,11 +6,13 @@
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/31 11:32:06 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/05/31 11:38:47 by viceda-s         ###   ########.fr       */
+/*   Updated: 2025/06/03 21:01:50 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
@@ -65,7 +67,7 @@ int	main(int argc, char **argv)
 	while (i < argc)
 	{
 		ft_putstr(argv[i]);
-		write(1, "\n", 1);
+		ft_putchar('\n');
 		i++;
 	}
 	return (0);

@@ -1,27 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/31 11:04:06 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/06/03 20:56:12 by viceda-s         ###   ########.fr       */
+/*   Created: 2025/06/03 16:25:49 by viceda-s          #+#    #+#             */
+/*   Updated: 2025/06/03 16:26:43 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void	ft_putchar(char c);
-
-void	ft_print_alphabet(void)
+char	*ft_strdup(const char *s)
 {
-	char	c;
+	char	*str;
+	size_t	len;
 
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	len = ft_strlen(s);
+	str = (char *)malloc(sizeof(char) * (len + 1));
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, s, len + 1);
+	return (str);
 }
