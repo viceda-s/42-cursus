@@ -1,26 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/03 16:25:49 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/06/04 13:49:01 by viceda-s         ###   ########.fr       */
+/*   Created: 2025/06/04 13:48:29 by viceda-s          #+#    #+#             */
+/*   Updated: 2025/06/04 13:48:37 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
+#include <stdlib.h>
 
-char	*ft_strdup(const char *s)
+void	*ft_calloc(size_t count, size_t size)
 {
-	char	*str;
-	size_t	len;
+	void	*ptr;
+	size_t	total;
 
-	len = ft_strlen(s);
-	str = (char *)malloc(sizeof(char) * (len + 1));
-	if (!str)
+	if (count == 0 || size == 0)
+		return (malloc(0));
+	total = count * size;
+	if (size != 0 && total / size != count)
 		return (NULL);
-	ft_strlcpy(str, s, len + 1);
-	return (str);
+	ptr = malloc(total);
+	if (!ptr)
+		return (NULL);
+	ft_bzero(ptr, total);
+	return (ptr);
 }
