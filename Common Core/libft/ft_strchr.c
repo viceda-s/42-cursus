@@ -1,36 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: viceda-s <viceda-s@student.42luxembourg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/03 16:31:38 by viceda-s          #+#    #+#             */
-/*   Updated: 2025/06/04 13:33:33 by viceda-s         ###   ########.fr       */
+/*   Created: 2025/06/04 13:30:50 by viceda-s          #+#    #+#             */
+/*   Updated: 2025/06/04 13:31:00 by viceda-s         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+char	*ft_strchr(const char *s, int c)
 {
-	int	result;
-	int	sign;
-
-	result = 0;
-	sign = 1;
-	while (*str == ' ' || (*str >= '\t' && *str <= '\r'))
-		str++;
-	if (*str == '-' || *str == '+')
+	while (*s)
 	{
-		if (*str == '-')
-			sign = -1;
-		str++;
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
 	}
-	while (*str >= '0' && *str <= '9')
-	{
-		result = result * 10 + (*str - '0');
-		str++;
-	}
-	return (result * sign);
+	if (*s == (char)c)
+		return ((char *)s);
+	return (NULL);
 }
