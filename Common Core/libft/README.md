@@ -46,14 +46,14 @@ A libft é uma biblioteca que contém recriações de várias funções padrão 
 - `ft_putendl_fd` - Escreve string com nova linha em file descriptor
 - `ft_putnbr_fd` - Escreve número em file descriptor
 
-### Funções de Lista Encadeada (Bônus)
+### Funções de Lista Encadeada (Bónus)
 - `ft_lstnew` - Cria novo nó
 - `ft_lstadd_front` - Adiciona nó no início
 - `ft_lstsize` - Conta número de nós
 - `ft_lstlast` - Retorna último nó
 - `ft_lstadd_back` - Adiciona nó no final
-- `ft_lstdelone` - Deleta conteúdo de um nó
-- `ft_lstclear` - Deleta e libera lista
+- `ft_lstdelone` - Apaga conteúdo de um nó
+- `ft_lstclear` - Apaga e libera lista
 - `ft_lstiter` - Itera lista aplicando função
 - `ft_lstmap` - Cria nova lista aplicando função
 
@@ -82,7 +82,7 @@ cc seu_programa.c -L. -lft
 
 ## 🧪 Normas e Testes
 
-- Todas as funções estão escritas de acordo com a Norma da 42.
+- Todas as funções estão escritas conforme a Norma da 42.
 - Funções não geram vazamentos de memória.
 - Todas as funções foram testadas extensivamente.
 
@@ -90,7 +90,7 @@ cc seu_programa.c -L. -lft
 
 O Makefile contém as seguintes regras:
 - `make` - Compila a biblioteca
-- `make bonus` - Compila a biblioteca com funções bônus
+- `make bonus` - Compila a biblioteca com funções bónus
 - `make clean` - Remove arquivos objeto
 - `make fclean` - Remove arquivos objeto e biblioteca
 - `make re` - Recompila a biblioteca
