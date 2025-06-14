@@ -1,102 +1,108 @@
-# libft
+# libft (125%)
 
-Este projeto é uma implementação duma biblioteca em C contendo várias funções úteis que serão usadas ao longo do Common Core da 42.
+This project is an implementation of a C library containing several useful functions that will be used throughout the 42 Common Core.
 
-## 📝 Descrição
+## 📝 Description
 
-A libft é uma biblioteca que contém recriações de várias funções padrão da libc, além de outras funções auxiliares que serão úteis ao longo do curso. Este projeto nos ajuda a entender melhor como essas funções funcionam, proibindo o uso das funções originais.
+Libft is a library that includes reimplementations of several standard libc functions, as well as additional helper functions that will be useful throughout the course. This project helps us better understand how these functions work by **forbidding** the use of the originals.
 
-## 🛠️ Funções Implementadas
+## 🛠️ Implemented Functions
 
-### Funções da Libc
-- `ft_isalpha` - Verifica se é um caractere alfabético
-- `ft_isdigit` - Verifica se é um dígito
-- `ft_isalnum` - Verifica se é alfanumérico
-- `ft_isascii` - Verifica se é um caractere ASCII
-- `ft_isprint` - Verifica se é um caractere imprimível
-- `ft_strlen` - Calcula o comprimento de uma string
-- `ft_memset` - Preenche memória com um byte constante
-- `ft_bzero` - Zera um bloco de memória
-- `ft_memcpy` - Copia área de memória
-- `ft_memmove` - Copia área de memória com tratamento de sobreposição
-- `ft_strlcpy` - Copia string de forma segura
-- `ft_strlcat` - Concatena strings de forma segura
-- `ft_toupper` - Converte para maiúsculo
-- `ft_tolower` - Converte para minúsculo
-- `ft_strchr` - Localiza caractere em string
-- `ft_strrchr` - Localiza último caractere em string
-- `ft_strncmp` - Compara strings
-- `ft_memchr` - Procura caractere em área de memória
-- `ft_memcmp` - Compara área de memória
-- `ft_strnstr` - Localiza substring em string
-- `ft_atoi` - Converte string para inteiro
-- `ft_calloc` - Aloca memória e inicializa com zero
-- `ft_strdup` - Duplica string
+### Libc Functions
+- `ft_isalpha` - Checks if a character is alphabetic  
+- `ft_isdigit` - Checks if a character is a digit  
+- `ft_isalnum` - Checks if a character is alphanumeric  
+- `ft_isascii` - Checks if a character is ASCII  
+- `ft_isprint` - Checks if a character is printable  
+- `ft_strlen` - Calculates the length of a string  
+- `ft_memset` - Fills memory with a constant byte  
+- `ft_bzero` - Zeros out a block of memory  
+- `ft_memcpy` - Copies memory area  
+- `ft_memmove` - Copies memory area with overlap handling  
+- `ft_strlcpy` - Safely copies strings  
+- `ft_strlcat` - Safely concatenates strings  
+- `ft_toupper` - Converts to uppercase  
+- `ft_tolower` - Converts to lowercase  
+- `ft_strchr` - Locates character in string  
+- `ft_strrchr` - Locates last occurrence of a character in string  
+- `ft_strncmp` - Compares strings  
+- `ft_memchr` - Searches for a byte in memory  
+- `ft_memcmp` - Compares memory areas  
+- `ft_strnstr` - Locates a substring in a string  
+- `ft_atoi` - Converts string to integer  
+- `ft_calloc` - Allocates and zeroes memory  
+- `ft_strdup` - Duplicates a string  
 
-### Funções Adicionais
-- `ft_substr` - Cria substring
-- `ft_strjoin` - Concatena duas strings
-- `ft_strtrim` - Remove caracteres específicos do início e fim
-- `ft_split` - Divide string em array usando delimitador
-- `ft_itoa` - Converte inteiro para string
-- `ft_strmapi` - Aplica função a cada caractere da string
-- `ft_striteri` - Aplica função a cada caractere da string com índice
-- `ft_putchar_fd` - Escreve caractere em file descriptor
-- `ft_putstr_fd` - Escreve string em file descriptor
-- `ft_putendl_fd` - Escreve string com nova linha em file descriptor
-- `ft_putnbr_fd` - Escreve número em file descriptor
+### Additional Functions
+- `ft_substr` - Creates a substring  
+- `ft_strjoin` - Concatenates two strings  
+- `ft_strtrim` - Trims specific characters from start and end  
+- `ft_split` - Splits a string into an array using a delimiter  
+- `ft_itoa` - Converts an integer to string  
+- `ft_strmapi` - Applies a function to each character of a string  
+- `ft_striteri` - Applies a function to each character (with index)  
+- `ft_putchar_fd` - Writes a character to a file descriptor  
+- `ft_putstr_fd` - Writes a string to a file descriptor  
+- `ft_putendl_fd` - Writes a string followed by a newline to a file descriptor  
+- `ft_putnbr_fd` - Writes a number to a file descriptor  
 
-### Funções de Lista Encadeada (Bónus)
-- `ft_lstnew` - Cria novo nó
-- `ft_lstadd_front` - Adiciona nó no início
-- `ft_lstsize` - Conta número de nós
-- `ft_lstlast` - Retorna último nó
-- `ft_lstadd_back` - Adiciona nó no final
-- `ft_lstdelone` - Apaga conteúdo de um nó
-- `ft_lstclear` - Apaga e libera lista
-- `ft_lstiter` - Itera lista aplicando função
-- `ft_lstmap` - Cria nova lista aplicando função
+### Bonus - Linked List Functions
+- `ft_lstnew` - Creates a new node  
+- `ft_lstadd_front` - Adds a node to the beginning  
+- `ft_lstsize` - Counts the number of nodes  
+- `ft_lstlast` - Returns the last node  
+- `ft_lstadd_back` - Adds a node to the end  
+- `ft_lstdelone` - Deletes a node's content  
+- `ft_lstclear` - Clears and frees a list  
+- `ft_lstiter` - Iterates the list applying a function  
+- `ft_lstmap` - Creates a new list applying a function to each node  
 
-## 🚀 Como usar
+## 🚀 How to Use
 
-1. Clone o repositório:
+### 1. Clone the repository:
 ```bash
-git clone [URL do repositório]
+git clone [repository URL]
 ```
 
-2. Compila a biblioteca:
+### 2. Compile the library:
 ```bash
-make        # Compila as funções obrigatórias
-make bonus  # Compila também as funções bônus
+make        # Compiles mandatory functions
+make bonus  # Also compiles bonus functions
 ```
 
-3. Para usar no seu projeto:
-- Inclua o cabeçalho:
-```c
+### 3.To use it in your project:
+Include the header:
+```bash
 #include "libft.h"
 ```
-- Compila o seu projeto linkando com a libft:
+
+Compile your project linking with libft:
 ```bash
-cc seu_programa.c -L. -lft
+cc your_program.c -L. -lft
 ```
 
-## 🧪 Normas e Testes
 
-- Todas as funções estão escritas conforme a Norma da 42.
-- Funções não geram vazamentos de memória.
-- Todas as funções foram testadas extensivamente.
+## 🧪 Norms & Testing
+
+- All functions are written according to the 42 Norm.
+- Functions are leak-free.
+- All functions have been thoroughly tested.
+- All files **(.c/.h & Makefile)** must be in the root of your repository.
 
 ## 📄 Makefile
 
-O Makefile contém as seguintes regras:
-- `make` - Compila a biblioteca
-- `make bonus` - Compila a biblioteca com funções bónus
-- `make clean` - Remove arquivos objeto
-- `make fclean` - Remove arquivos objeto e biblioteca
-- `make re` - Recompila a biblioteca
+The Makefile contains the following rules:
 
-## 📝 Notas
+- `make` - Compiles the library
+- `make bonus` - Compiles the library including bonus functions
+- `make clean` - Removes object files
+- `make fclean` - Removes object files and the library
+- `make re` - Recompiles the library
 
-- Este projeto é parte do currículo comum da 42.
-- Todas as funções foram implementadas do zero.
-- O uso de funções da libc é estritamente limitado.
+## 📝 Notes
+
+- This project is part of the 42 Common Core curriculum.
+- All functions were implemented from scratch.
+- Usage of libc functions is strictly limited.
+
+---
