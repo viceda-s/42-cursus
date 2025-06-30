@@ -1,4 +1,15 @@
-# get\_next\_line
+<h1 align="center">
+  get_next_line
+</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Score-125%2F100-success">
+  <img src="https://img.shields.io/badge/Language-C-informational">
+  <img src="https://img.shields.io/github/repo-size/viceda-s/42-cursus?label=Repo%20Size">
+  <img src="https://img.shields.io/github/last-commit/viceda-s/42-cursus?label=Last%20Commit">
+</p>
+
+---
 
 ## 🧠 Overview
 
@@ -13,7 +24,6 @@ This is a common coding exercise to develop a better understanding of file I/O, 
 - `get_next_line.c` – Contains the main logic of the function.
 - `get_next_line_utils.c` – Helper functions used by `get_next_line`.
 - `get_next_line.h` – Header file containing the function prototypes and necessary includes.
-- `main.c` – (Optional) Example main file for testing.
 
 ---
 
@@ -105,7 +115,5 @@ Or use a testing tool such as:
 
 ---
 
-## 📄 License
-
-This project is part of the **42 School Curriculum** and is subject to its evaluation rules.
+Happy coding!
 
