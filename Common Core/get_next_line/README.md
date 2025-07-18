@@ -5,8 +5,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Score-125%2F100-success">
   <img src="https://img.shields.io/badge/Language-C-informational">
-  <img src="https://img.shields.io/github/repo-size/viceda-s/42-cursus?label=Repo%20Size">
-  <img src="https://img.shields.io/github/last-commit/viceda-s/42-cursus?label=Last%20Commit">
 </p>
 
 ---
