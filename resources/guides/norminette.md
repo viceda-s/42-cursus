@@ -58,7 +58,7 @@ int	ft_add_numbers(int a, int b)
 
 **Correct Variable Declaration:**
 ```
-int		count;
+int	count;
 char	*str;
 ```
 
@@ -72,7 +72,7 @@ else
 {
 	// code
 }
-``
+```
 
 ---
 
@@ -92,10 +92,10 @@ else
 - [Official Norminette Documentation](https://github.com/42School/norminette)
 - [Norminette Online Checker](https://norminette.42network.org/)
 - CLI:  
-    ```
-    pip install norminette
-    norminette <directory_or_files>
-    ```
+```
+pip install norminette
+norminette <directory_or_files>
+```
 
 ---
 
