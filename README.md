@@ -102,9 +102,6 @@ make
 ## 📚 Useful Resources
 
 - [Norminette Guide](./resources/guides/norminette.md)
-- [Environment Setup](./utils/setup.md)
-- [Templates](./resources/guides/templates/)
-- [Tools & Scripts](./utils/)
 
 ---
 
