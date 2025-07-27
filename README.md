@@ -72,7 +72,7 @@ Hello! I’m Vicente (viceda-s), a student at 42 Luxembourg, sharing here the pr
     
 - [minishell](./level-3/minishell)
   
-  Build your own shell with parsing, execution, pipes, and redirections; brings together all your C and systems programming knowledge (with @bianpiovano).
+  Build your own shell with parsing, execution, pipes, and redirections; brings together all your C and systems programming knowledge.
 
 ---
 
